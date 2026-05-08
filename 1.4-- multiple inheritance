@@ -1,0 +1,32 @@
+// 1.4 -- Multiple Inheritance
+#include <iostream>
+using namespace std;
+
+class Parent1 {
+public:
+    void paiseDoMummy() {
+        cout << "Mummy paise de do ghoomne jaana hai..." << endl;
+    }
+};
+
+class Parent2 {
+public:
+    void paiseDoPapa() {
+        cout << "Papa paise de do books laani hai..." << endl;
+    }
+};
+
+// Child class inheriting from Parent1 and Parent2
+class Child : public Parent1, public Parent2 {
+
+};
+
+int main() {
+
+    Child c;
+
+    c.paiseDoMummy();
+    c.paiseDoPapa();
+
+    return 0;
+}
